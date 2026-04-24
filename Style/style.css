@@ -75,7 +75,7 @@
 
         /* ========== HEADER ========== */
         .hero {
-            background: linear-gradient(107deg, #ffefcf 0%, #f4f75d 100%);
+            background: linear-gradient(107deg, #f4f75d 0%, #f4f75d 100%);
             padding: 3rem 0 2rem;
             border-bottom: 1px solid var(--border-light);
             text-align: center;
@@ -172,19 +172,36 @@
 
         .card-img {
             width: 100%;
-            height: 220px;
+            height: 300px;
             object-fit: cover;
             background: #f4e8d8;
             display: block;
         }
             .kit_img {
-            width: 330px;
-            height: 220px;
+            width: 320px;
+            height: 270px;
+            background: #f4e8d8;
+
+        }
+
+            .kit_img2  {
+            width: 320px;
+            height: 270px;
+            background: #f4e8d8;
             object-fit: cover;
             background: #f4e8d8;
             display: block;
         }
-
+@media (max-width: 760px) {
+             .kit_img2 {
+            width: 200px;
+            height: 80%;
+        }
+    .kit_img {
+            width: 160px;
+            height: 160px;
+        }
+    }
         .card-body {
             padding: 1.5rem;
         }
@@ -264,6 +281,7 @@
             flex-wrap: wrap;
             gap: 1.8rem;
             justify-content: center;
+            position: relative;
         }
         .deco-card {
             background: white;
@@ -275,6 +293,18 @@
             border: 1px solid #f2e3cf;
             text-align: center;
         }
+   .deco-card2 {
+        background: rgba(254, 255, 217, 0.521);
+        border-radius: 28px;
+        padding: 1.2rem 1.8rem;
+        width: fit-content;
+        margin: 1rem auto 0;
+        box-shadow: var(--shadow-sm);
+        border: 1px solid #f2e3cf;
+        text-align: center;
+        grid-column: 1 / -1;
+        }
+
         .deco-card span {
             font-weight: 700;
             font-size: 1.3rem;
@@ -295,12 +325,26 @@
             flex-wrap: wrap;
             justify-content: space-between;
             align-items: center;
-            gap: 1rem;
+        }
+
+        .kit-prices {
+            display: grid;
+            grid-template-columns: repeat(2, 3fr);
+            justify-items: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        .kit-prices img {
+            width: 100%;
+            max-width: 410px;
         }
 
         .kit-prices p {
+            grid-column: 1 / -1;
             font-weight: 600;
-            margin: 6px 0;
+
+            text-align: center;
         }
 
         .bonus-text {
