@@ -165,6 +165,17 @@
             border: 1px solid var(--border-light);
         }
 
+        .card-toboga {
+            width: 100%;
+            height: 300px;
+            background: var(--bg-card);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            border: 1px solid var(--border-light);
+        }
+
         .card:hover {
             transform: translateY(-5px);
             box-shadow: var(--shadow-hover);
@@ -173,6 +184,13 @@
         .card-img {
             width: 100%;
             height: 300px;
+            object-fit: cover;
+            background: #f4e8d8;
+            display: block;
+        }
+            .card-toboga {
+            width: 550px;
+            height: 400px;
             object-fit: cover;
             background: #f4e8d8;
             display: block;
